@@ -1,1 +1,1 @@
-url="https://0.0.0.0:10000/predict"
+url="https://car-price-prediction-1p45.onrender.com/predict"
