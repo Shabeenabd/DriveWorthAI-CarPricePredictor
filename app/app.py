@@ -1,6 +1,5 @@
-from flask import Flask,render_template,request,jsonify
+from flask import Flask,render_template,request
 import pickle,numpy as np,datetime,os,sys
-# from app_config import url
 
 data=pickle.load(open(r'saved_model.pkl','rb'))
 brands=data['brands']
@@ -28,7 +27,6 @@ app=Flask(__name__)
 @app.route('/')
 def main():
     url ='/predict'
-    # return f'<h2>Hello, World! Your IP is {url} and port is </h2>'
     return render_template('index.html',data=brands,url=url)
 
 @app.route('/predict',methods=['POST'])
