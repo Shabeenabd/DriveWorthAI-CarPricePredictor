@@ -1,4 +1,8 @@
-flask
+Flask
+Jinja2
+Werkzeug
+itsdangerous
+click
+MarkupSafe
 gunicorn
-Jinja
 numpy
