@@ -111,6 +111,7 @@
             const form = document.getElementById('review-form');
             var result=document.getElementById('predict_text')
             form.addEventListener('submit', (e) => {
+            result.innerHTML='Predicting...'
             e.preventDefault();
             const formData = new FormData(form);   
             fetch(url, {
