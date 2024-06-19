@@ -6,7 +6,7 @@ from app_config import url
 script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
 model_path=os.path.join(script_directory,'saved_model.pkl')
 data=pickle.load(open(model_path,'rb'))
-data=pickle.load(open(r'artifact\saved_model.pkl','rb'))
+# data=pickle.load(open(r'artifact\saved_model.pkl','rb'))
 brands=data['brands']
 model=data['model']
 scaler=data['scaler']
