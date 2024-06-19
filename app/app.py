@@ -1,5 +1,5 @@
 from flask import Flask,render_template,request,jsonify
-import pickle,sklearn,numpy as np,datetime
+import pickle,numpy as np,datetime
 from app_config import url
 data=pickle.load(open(r'app\artifact\saved_model.pkl','rb'))
 brands=data['brands']
