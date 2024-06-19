@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,jsonify
 import pickle,numpy as np,datetime
 from app_config import url
-data=pickle.load(open(r'app\artifact\saved_model.pkl','rb'))
+data=pickle.load(open(r'artifact\saved_model.pkl','rb'))
 brands=data['brands']
 model=data['model']
 scaler=data['scaler']
