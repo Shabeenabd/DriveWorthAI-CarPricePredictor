@@ -27,9 +27,9 @@ app=Flask(__name__)
 
 @app.route('/')
 def main():
-    ip = request.host.split(':')[0]
-    port = request.host.split(':')[1]
-    return f'<h2>Hello, World! Your IP is {ip} and port is {port}</h2>'
+    ip = request.host#.split(':')[0]
+    # port = request.host.split(':')[1]
+    return f'<h2>Hello, World! Your IP is {ip} and port is </h2>'
     # return render_template('index.html',data=brands,url=url)
 
 @app.route('/predict',methods=['POST'])
