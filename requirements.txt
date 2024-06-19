@@ -1,0 +1,8 @@
+flask
+gunicorn
+Jinja
+os
+sys
+numpy
+datetime
+pickle
