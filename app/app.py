@@ -2,10 +2,6 @@ from flask import Flask,render_template,request,jsonify
 import pickle,numpy as np,datetime,os,sys
 from app_config import url
 
-
-# script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
-# model_path=os.path.join(script_directory,'saved_model.pkl')
-# data=pickle.load(open(model_path,'rb'))
 data=pickle.load(open(r'saved_model.pkl','rb'))
 brands=data['brands']
 model=data['model']
@@ -31,7 +27,10 @@ app=Flask(__name__)
 
 @app.route('/')
 def main():
-    return render_template('index.html',data=brands,url=url)
+    ip = request.host.split(':')[0]
+    port = request.host.split(':')[1]
+    return f'<h2>Hello, World! Your IP is {ip} and port is {port}</h2>'
+    # return render_template('index.html',data=brands,url=url)
 
 @app.route('/predict',methods=['POST'])
 def predict():
