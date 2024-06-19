@@ -6,4 +6,4 @@ click
 MarkupSafe
 gunicorn
 numpy
-sklearn
+scikit-learn
