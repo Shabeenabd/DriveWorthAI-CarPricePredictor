@@ -2,8 +2,8 @@
 Welcome to DriveWorthAI, an innovative AI-powered tool designed to predict car prices based on various car features. Whether you're a car enthusiast, a buyer, or a seller, DriveWorthAI provides accurate and reliable price predictions to help you make informed decisions.
 
 
-🚀 Live Demo
-checkout the application [Click here](https://car-price-prediction-8a9y.onrender.com/)
+🚀 **Live Demo**
+**checkout the application [Click here](https://car-price-prediction-8a9y.onrender.com/) 🌐**
 ## 🌟 Table of Contents
 
 - [Project Overview](#-project-Overview)
