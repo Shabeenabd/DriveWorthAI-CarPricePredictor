@@ -15,10 +15,13 @@
   </head>
 
   <body class="font-mono">
-    <div class="flex items-center justify-center h-screen">
+    <div class="flex flex-col items-center justify-center min-h-screen pt-6">
+      <!-- Main Title -->
+      <br>
+      <h1 class="text-5xl font-extrabold text-white mb-8">Drive Worth AI</h1>
       <div class="p-12 max-w-lg bg-white rounded-lg overflow-hidden shadow-lg">
         <div class="font-bold text-xl mb-2">
-          Car Price Prediction 
+          Car Price Predictor
         </div>
 
         <form id="review-form"  method="POST">
@@ -86,40 +89,63 @@
     </div>
 
    
+
+    <!-- ======================= JAVASCRIPT SECTION ======================= -->
+
   <script type="text/javascript">
-      var url='{{url}}';
-      console.log(url);
+      // The backend URL where form data will be sent for prediction
+      var url = '{{url}}';
+
+      // Dynamically set the max year to current year for validation
       const currentYear = new Date().getFullYear();
       document.getElementById("year").max = currentYear.toString();
 
-      brand=document.getElementById('brand')
-      var data={{data|tojson}};
-      var brands=Object.keys(data)
+      // Fetch the brands details passed from the backend (Flask/Jinja templating)
+      var data = {{data|tojson}};
+      
+      // Populate the brand dropdown with options
+      brand = document.getElementById('brand')
+      var brands = Object.keys(data)
+      // Loop through brand names and append them to the dropdown
       for(var i in brands){
-      var opt=new Option(brands[i]);
-      brand.append(opt);}
+        var opt = new Option(brands[i]);
+        brand.append(opt);
+      }
 
+      // When a brand is selected, populate the car model dropdown
       brand.addEventListener('change', function() {
-            var car=document.getElementById('car')
-            car.options.length = 0;
+            var car = document.getElementById('car')
+            car.options.length = 0;  // Clear previous options
+
             var selected_brand=brand.value
             if(selected_brand in data){
-            var cars=data[selected_brand]
-            for(var i in cars){
-            var opt=new Option(cars[i]);
-            car.append(opt);}}})
-            
-            const form = document.getElementById('review-form');
-            var result=document.getElementById('predict_text')
-            form.addEventListener('submit', (e) => {
-            result.innerHTML='Predicting...'
-            e.preventDefault();
-            const formData = new FormData(form);   
-            fetch(url, {
-            method: 'POST',
-            body: formData})
-              .then(response => response.json())
-              .then(data =>result.innerHTML=(Math.round(data/1000)*1000).toLocaleString()+' Rupees')})
+              var cars = data[selected_brand]
+              for(var i in cars){
+                var opt = new Option(cars[i]);
+                car.append(opt);
+              }
+            }
+          })
+
+      // Handle form submission      
+      const form = document.getElementById('review-form');
+      var result=document.getElementById('predict_text')
+
+      form.addEventListener('submit', (e) => {
+        result.innerHTML='Predicting...'   // Show loading text
+        e.preventDefault();    // Prevent page reload on submit
+        // Capture form data
+        const formData = new FormData(form);     
+
+        // Send data to backend API using fetch
+        fetch(url, {
+          method: 'POST',
+          body: formData
+        })
+          .then(response => response.json())
+           // Format predicted price to nearest 1000 and display with 'Rupees'
+          .then(data =>result.innerHTML=(Math.round(data/1000)*1000).toLocaleString()+' Rupees')
+        })
     </script>
   </body>
 </html>
