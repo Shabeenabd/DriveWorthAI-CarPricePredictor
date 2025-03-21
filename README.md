@@ -6,7 +6,7 @@ Welcome to DriveWorthAI, an innovative AI-powered tool designed to predict car p
 checkout the application [Click here](https://car-price-prediction-8a9y.onrender.com/)
 ## 🌟 Table of Contents
 
-- [Project Overview](#Overview)
+- [Project Overview](#-Overview)
 - [Technologies Used](#technologies-used)
 - [Installation Instructions](#installation-instructions)
 - [Project Structure](#project-structure)
@@ -14,17 +14,22 @@ checkout the application [Click here](https://car-price-prediction-8a9y.onrender
 - [Model Performance](#model-performance)
 
 
-## Overview 🔍
+## 🔍 Overview
 DriveWorthAI is an AI-powered car price prediction model designed to estimate the market value of a car based on key features such as kilometers driven, manufacturing year, ownership type, fuel type, and more.
 
 This project combines the power of machine learning with a sleek and interactive web interface built using Flask, HTML, and Tailwind CSS. DriveWorthAI makes it easy for users to input car details and get real-time price predictions — all from a user-friendly browser-based interface.
+
+Whether you’re buying a used car or planning to sell yours, DriveWorthAI ensures you're informed, confident, and in control of your car deal negotiations.
+
+
 
 ## ✨ Key Features
 - **AI-powered price prediction :** Get instant and accurate car price estimations based on industry patterns and historical data.
 - **User-Friendly Web Interface :** Clean, minimal, and interactive web design built with HTML and Tailwind CSS.
 - **Modular Backend :** Flask-based architecture, making it easy to extend or deploy on cloud platforms.
+- **Real-time :** Predictions: Instant feedback based on user input without the need to wait.
 
-# How It Works 🛠️
+## 🛠️ How It Works
 - **Data Collection :** The model is trained on a comprehensive dataset containing various car features and their corresponding prices.
 - **Model Training :** A Linear Regression model is trained to learn the relationship between car features and prices.
 - **Web Application :** The trained model is integrated into a Flask web application, allowing users to interact with the model through a web interface
