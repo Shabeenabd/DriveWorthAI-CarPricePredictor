@@ -6,15 +6,17 @@ Welcome to DriveWorthAI, an innovative AI-powered tool designed to predict car p
 checkout the application [Click here](https://car-price-prediction-8a9y.onrender.com/)
 ## 🌟 Table of Contents
 
-- [Project Overview](#-Overview)
-- [Technologies Used](#technologies-used)
-- [Installation Instructions](#installation-instructions)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Model Performance](#model-performance)
+- [Project Overview](#-project-Overview)
+- [Key Features](#-key-features)
+- [How It Works](#-how-it-works)
+- [Installation Instructions](#-installation-instructions)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Model Performance](#-model-performance)
 
+-----
 
-## 🔍 Overview
+## 🔍 Project Overview
 DriveWorthAI is an AI-powered car price prediction model designed to estimate the market value of a car based on key features such as kilometers driven, manufacturing year, ownership type, fuel type, and more.
 
 This project combines the power of machine learning with a sleek and interactive web interface built using Flask, HTML, and Tailwind CSS. DriveWorthAI makes it easy for users to input car details and get real-time price predictions — all from a user-friendly browser-based interface.
@@ -35,12 +37,6 @@ Whether you’re buying a used car or planning to sell yours, DriveWorthAI ensur
 - **Web Application :** The trained model is integrated into a Flask web application, allowing users to interact with the model through a web interface
 - **Price Prediction :** Users input car details, and the model predicts the price based on the provided features.
 
-## 🔧 Technologies Used
-##### **Python** : The core programming language used for developing the model and the web application.
-##### **Backend** : Flask - A lightweight web framework used to serve the model and handle web requests.
-##### **Frontend** : HTML & Tailwind CSS - Used to create a responsive and visually appealing user interface.
-##### **Scikit-learn** : A powerful machine learning library used for training the Linear Regression model.
-##### **Pandas & NumPy** : Libraries used for data manipulation and preprocessing.
 ## 📋 Installation Instructions
 
 To get started with this project, follow the instructions below to set up the environment and install the necessary dependencies.
