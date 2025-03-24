@@ -22,7 +22,7 @@ Welcome to DriveWorthAI, an innovative AI-powered tool designed to predict car p
 ## 🔍 Project Overview
 
 
-![](images/web_demo.png)
+![Application UI](images/web_demo.png)
 
 
 DriveWorthAI is an AI-powered car price prediction model designed to estimate the market value of a car based on key features such as kilometers driven, manufacturing year, ownership type, fuel type, and more.
