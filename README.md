@@ -39,7 +39,7 @@ Whether you’re buying a used car or planning to sell yours, DriveWorthAI ensur
 - **Modular Backend :** Flask-based architecture, making it easy to extend or deploy on cloud platforms.
 - **Real-time :** Predictions: Instant feedback based on user input without the need to wait.
 
-## 🛠️How It Works
+## 🛠️ How It Works
 - **Data Collection :** The model is trained on a comprehensive dataset containing various car features and their corresponding prices.
 - **Model Training :** A Linear Regression model is trained to learn the relationship between car features and prices.
 - **Web Application :** The trained model is integrated into a Flask web application, allowing users to interact with the model through a web interface
