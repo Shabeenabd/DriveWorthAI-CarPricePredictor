@@ -4,6 +4,10 @@ Welcome to DriveWorthAI, an innovative AI-powered tool designed to predict car p
 
 🚀 **Live Demo**
 **checkout the application [Click here](https://car-price-prediction-8a9y.onrender.com/) 🌐**
+
+>![Build Status](https://img.shields.io/badge/warning-cold--start-blue) The application may take some time to respond after periods of inactivity due to resource optimization
+
+
 ## 🌟 Table of Contents
 
 - [Project Overview](#-project-Overview)
