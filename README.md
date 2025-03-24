@@ -7,7 +7,6 @@ Welcome to DriveWorthAI, an innovative AI-powered tool designed to predict car p
 
 >![Build Status](https://img.shields.io/badge/warning-cold--start-blue) The application may take some time to respond after periods of inactivity due to resource optimization
 
-
 ## 🌟 Table of Contents
 
 - [Project Overview](#-project-Overview)
@@ -21,6 +20,11 @@ Welcome to DriveWorthAI, an innovative AI-powered tool designed to predict car p
 -----
 
 ## 🔍 Project Overview
+
+
+![](images/web_demo.png)
+
+
 DriveWorthAI is an AI-powered car price prediction model designed to estimate the market value of a car based on key features such as kilometers driven, manufacturing year, ownership type, fuel type, and more.
 
 This project combines the power of machine learning with a sleek and interactive web interface built using Flask, HTML, and Tailwind CSS. DriveWorthAI makes it easy for users to input car details and get real-time price predictions — all from a user-friendly browser-based interface.
@@ -95,6 +99,9 @@ DriveWorthAI/
 │    ├── feature_engineering.ipynb                 # Data Preprocessing and Feature Engineering
 │    ├── model_build.ipynb                         # Model Training
 │    └── model_evaluate.ipynb                      # Model Testing
+│
+├── images                                            
+│    └── web_demo.png
 │
 ├── requirements.txt                               # Project Dependencies
 │
